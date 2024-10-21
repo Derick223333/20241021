@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo 웹앱</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"> <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="styles.css"> <!-- CSS 파일 링크 -->
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto mt-10">
+        <h1 class="text-3xl text-center font-bold mb-6">할 일 목록</h1>
+        <div id="todo-form" class="flex mb-4">
+            <input type="text" id="todo-input" class="flex-1 border-2 border-blue-500 rounded-l-lg p-2" placeholder="할 일을 입력하세요">
+            <button id="add-btn" class="bg-blue-500 text-white rounded-r-lg p-2 hover:bg-blue-600 transition">추가</button>
+        </div>
+        <ul id="todo-list" class="list-none"></ul>
+    </div>
+
+    <script src="script.js"></script> <!-- JavaScript 파일 링크 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- SweetAlert2 JS -->
+</body>
+</html>
